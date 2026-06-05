@@ -5,5 +5,6 @@ namespace ChaosFramework.Platform
         PrimaryWindow primaryWindow { get; }
         void Setup();
         void Present();
+        event System.Action Terminate;
     }
 }
