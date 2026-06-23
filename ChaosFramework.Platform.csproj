@@ -15,6 +15,9 @@
   <!-- Configurations -->
   <Import Project="$(SolutionDir)submodules/ChaosPresets.Targets/Configurations.targets" />
 
+  <!-- References -->
+  <Import Project="$(SolutionDir)submodules/ChaosPresets.References/ProjectReferences/ChaosFramework.Math.targets" />
+
   <ItemGroup>
     <Compile Include="source/**/*.cs" />
   </ItemGroup>

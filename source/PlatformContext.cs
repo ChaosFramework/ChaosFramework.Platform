@@ -7,7 +7,8 @@ namespace ChaosFramework.Platform
         /// <summary> If not null, this describes how the platform can be used to target the OpenGL API. </summary>
         GlContext glContext { get; }
 
-        Window CreateWindow();
+        Window CreateWindow(string title);
+        Fullscreen CreateFullscreen(string title);
 
         /// <summary> Raised when the process receives a signal from the OS that it should be terminated. </summary>
         event System.Action Terminate;

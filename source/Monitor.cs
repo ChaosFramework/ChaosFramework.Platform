@@ -2,15 +2,18 @@ using ChaosFramework.Math.Vectors;
 
 namespace ChaosFramework.Platform
 {
-    public interface Window : PresentationContext
+    public interface Monitor
     {
         /// <summary> The width in pixels. </summary>
-        uint width { set; }
+        uint width { get; }
 
         /// <summary> The height in pixels. </summary>
-        uint height { set; }
+        uint height { get; }
 
         /// <summary> The position in pixels. </summary>
-        Vector2i position { set; }
+        Vector2i position { get; }
+
+        /// <summary> The name of the logical device. </summary>
+        string deviceName { get; }
     }
 }
