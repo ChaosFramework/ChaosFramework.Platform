@@ -10,8 +10,7 @@ namespace ChaosFramework.Platform
         GlContext glContext { get; }
 
         /// <summary>
-        ///     Enumerates all currently connected logical monitors,
-        ///     ordered by their index as assigned by the operating system.
+        ///     Enumerates all currently connected logical monitors in undefined order.
         /// </summary>
         /// <remarks>
         ///     There is no guarantee that when queried multiple times,
