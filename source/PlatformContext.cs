@@ -6,6 +6,13 @@ namespace ChaosFramework.Platform
 
     public interface PlatformContext
     {
+        /// <summary>
+        ///     Returns the primary monitor, if identifiable.
+        ///     Otherwise returns the first of <see cref="EnumerateMonitors"/>,
+        ///     or null if there are no monitors at all.
+        /// </summary>
+        Monitor PrimaryMonitor { get; }
+
         /// <summary> If not null, this describes how the platform can be used to target the OpenGL API. </summary>
         GlContext glContext { get; }
 
