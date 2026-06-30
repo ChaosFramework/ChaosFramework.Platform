@@ -1,12 +1,11 @@
 using ChaosFramework.Math.Vectors;
+using ChaosFramework.Graphics.Imaging;
 
 namespace ChaosFramework.Platform
 {
     public interface PresentationContext
     {
         string title { get; set; }
-
-        // TODO: icon
 
         /// <summary> The width in pixels. </summary>
         uint width { get; }
@@ -19,5 +18,8 @@ namespace ChaosFramework.Platform
 
         /// <summary> Issues a front buffer swap for this context. </summary>
         void Present();
+
+        /// <summary> Set the icon associated with the operating system level "window". </summary>
+        void SetIcon(Icon icon);
     }
 }
