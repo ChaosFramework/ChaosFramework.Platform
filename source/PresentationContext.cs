@@ -18,7 +18,11 @@ namespace ChaosFramework.Platform
         /// <summary> Issues a front buffer swap for this context. </summary>
         void Present();
 
-        /// <summary> Set the icon associated with the operating system level "window". </summary>
+        /// <summary>
+        ///     Attempts to set the icon associated with the operating system level "window".
+        ///     If setting an icon is not supported at all, this shall have no effect by default.
+        ///     Otherwise this shall accept (and convert if need be) any format listed in <see cref="ApplicationIcon.IconFormat"/>.
+        /// </summary>
         void SetIcon(ApplicationIcon icon);
     }
 }
