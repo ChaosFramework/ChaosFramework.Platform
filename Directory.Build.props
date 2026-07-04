@@ -2,6 +2,7 @@
 <Project>
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <LangVersion>12.0</LangVersion>
   </PropertyGroup>
 
   <Import Project="$(SolutionDir)submodules/ChaosPresets.Targets/Paths/Output/Common.targets" />

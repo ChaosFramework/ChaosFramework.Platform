@@ -1,5 +1,4 @@
 using ChaosFramework.Math.Vectors;
-using ChaosFramework.Graphics.Imaging;
 
 namespace ChaosFramework.Platform
 {
@@ -20,6 +19,6 @@ namespace ChaosFramework.Platform
         void Present();
 
         /// <summary> Set the icon associated with the operating system level "window". </summary>
-        void SetIcon(Icon icon);
+        void SetIcon(ApplicationIcon icon);
     }
 }
