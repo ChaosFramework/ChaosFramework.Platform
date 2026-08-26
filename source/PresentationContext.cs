@@ -24,5 +24,8 @@ namespace ChaosFramework.Platform
         ///     Otherwise this shall accept (and convert if need be) any format listed in <see cref="ApplicationIcon.IconFormat"/>.
         /// </summary>
         void SetIcon(ApplicationIcon icon);
+
+        /// <summary> Closes the underlying operating system level "window". </summary>
+        void Close();
     }
 }
